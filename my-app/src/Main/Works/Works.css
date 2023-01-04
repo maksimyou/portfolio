@@ -1,0 +1,45 @@
+
+.works_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #34547A;
+}
+.works_contant {
+    display: flex;
+    width: 1110px;
+    height: 250px;
+    align-items: center;
+    justify-content: space-between;
+    /*justify-content:center;*/
+
+}
+.works_item {
+    padding: 4px;
+    width: 137px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.works_count_project {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26.25px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.works_count_project span{
+    display: block;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24.61px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.works_item:hover {
+    color: #345073;
+}

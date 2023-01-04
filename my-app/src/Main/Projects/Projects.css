@@ -1,0 +1,35 @@
+.projects_container{
+
+
+
+}
+.projects_content{
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+.projects_item{
+position: relative;
+width: calc(320px + 150 * ((100vw - 320px) / (1920 - 320)));
+height: calc(320px + 150 * ((100vw - 320px) / (1920 - 320)));
+
+}
+.projects_item a{
+display: block;
+
+}
+.projects_item a:hover:before{
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: url('./view.png');
+    background: black;
+    opacity: 0.5;
+    width: calc(320px + 150 * ((100vw - 320px) / (1920 - 320)));
+    height: calc(320px + 150 * ((100vw - 320px) / (1920 - 320)));
+}
