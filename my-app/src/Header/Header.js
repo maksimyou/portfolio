@@ -4,8 +4,8 @@ import './Header.css';
 import Burger from './Burger';
 function Header() {
     let [burger, setBurger] = useState(false);
-    let brg;
-    burger ? brg = <Burger moveBurger={burger} setBurger={setBurger} /> : brg = <span></span>
+    //let brg;
+    //burger ? brg = <Burger moveBurger={burger} setBurger={setBurger} /> : brg = <span></span>
 
     //Плавная прокрутка к якорю
     document.querySelectorAll('a[href*="#"]').forEach(anchor => {
@@ -42,7 +42,7 @@ function Header() {
                     </div>
                     <span className='burger-btn' onClick={() => setBurger(!burger)}><span></span></span>
                 </div>
-                {brg}
+                <Burger moveBurger={burger} setBurger={setBurger} />
                 <div className="header_frontend_main_container">
                     <div className='frontend_main_content'>
                         <div className="header_frontend_img">

@@ -10,6 +10,7 @@ transform: translate(-100%);
 display: flex;
 justify-content: space-between;
 z-index: 1000;
+transition: .8s;
 }
 
 .header_menu_list_burger{
