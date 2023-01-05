@@ -2,7 +2,7 @@ import './About.css'
 function About() {
 
     return (
-        <div className='about_container' >
+        <div id='2' className='about_container' >
             <div className="about_content">
                 <div className="about_content_title">Обо мне</div>
                 <div className="about_content_text"><h1>Меня зовут Максим</h1><br />Я <span className='fronend_dev'>frontend-разработчик.</span> Мне нравится решать сложные задачи: разрабатывать сайты и веб-приложения или создавать дизайн для разных целей.<br />

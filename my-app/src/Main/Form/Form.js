@@ -1,18 +1,26 @@
-import './About.css'
-function About() {
+import './Form.css'
+function Form() {
 
     return (
-        <div className='about_container' >
-            <div className="about_content">
-                <div className="about_content_title">Обо мне</div>
-                <div className="about_content_text"><h1>Меня зовут Максим</h1><br />Я <span className='fronend_dev'>frontend-разработчик.</span> Мне нравится решать сложные задачи: разрабатывать сайты и веб-приложения или создавать дизайн для разных целей.<br />
+        <div id='5' className='form_container' >
+            <div className="form_content">
+                <div className="form_content_contact">
+                    <h2 className="form_contact_title">Свяжитесь со мной</h2>
+                    <div className="form_contact_discription">Любым удобным для вас способом.</div>
+                    <div className="form_contact_social">
+                        <a className='contact_social_link' href='https://web.telegram.org/'><img src={require('../socials/telegram.png')} alt='' /></a>
+                        <a className='contact_social_link' href='https://ru.linkedin.com/'><img src={require('../socials/linkedin.png')} alt='' /></a>
+                        <a className='contact_social_link' href='https://my-site.com'><img src={require('../socials/letter-m.png')} alt='' /></a>
+                        <a className='contact_social_link' href='https://github.com/'><img src={require('../socials/github.png')} alt='' /></a>
+                    </div>
 
-                    Меня захватывает процесс разработки и возможность создавать удобные и полезные продукты. Посмотрите мои работы в разделе <a className='portfolio' href='' >Портфолио.</a><br />
-
-                    Я открыт к предложениям на позицию frontend-разработчика или графического дизайнера, где могу внести свой вклад и развиваться вместе с компанией.<br />
-
-                    Если у вас есть вакансия, которая соответствует моим навыкам и опыту, не стесняйтесь связаться со мной, буду рад сотрудничеству.
                 </div>
+                <form className='form_content_forms'>
+                    <div className='form_content_initial'><input className="form_name" placeholder='Ваше имя' /><input className="form_email" placeholder='Ваш e-mail' /></div>
+                    <div className='form_content_text'><textarea className="form_text" placeholder='Сообщение' /></div>
+                    <div><button className='form_content_button'><span>Отправить</span></button></div>
+
+                </form>
             </div>
         </div >
     );
@@ -20,4 +28,4 @@ function About() {
 
 }
 
-export default About;
+export default Form;

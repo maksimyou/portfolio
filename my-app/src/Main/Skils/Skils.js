@@ -2,7 +2,7 @@ import './Skils.css'
 function Skils() {
 
     return (
-        <div className="my_skils_container">
+        <div id='4' className="my_skils_container">
             <div className="my_skils_content">
                 <div className="my_skils_lists">
                     <div className="lists_title">Мои навыки</div>
