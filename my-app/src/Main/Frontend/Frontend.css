@@ -1,0 +1,114 @@
+
+.header_frontend_main_container {
+    background: #EEEFF1;
+}
+.frontend_main_content{
+    max-width: 1110px;
+    margin: 0 auto;
+    height: 583px;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 60px;
+    align-items: center;
+}
+.frontend_contant {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 555px;
+    align-items: flex-start;
+  
+}
+
+.header_frontend_img {
+    max-width: 357px; ;
+    margin-right:  20px;
+    margin-left:  62px;
+}
+.header_frontend_img img{
+    max-width: 357px; ;
+}
+
+
+@media (max-width: 767px) {
+    .frontend_main_content {
+        margin: 40px auto 0 auto; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .frontend_contant {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 541px;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .header_frontend_img{
+        max-width: 257px; 
+        margin: 0 auto;
+    }
+  }
+
+
+
+@media (max-width: 767px) {
+    .header_frontend_img img{
+        max-width: 257px; ;
+    }
+  }
+.frontend_contant_title {
+    color: black;
+    font-size: calc(30px + 18 * ((100vw - 320px) / (1920 - 320)));
+    font-family: Roboto;
+    font-weight: 500px;
+   
+}
+
+@media (max-width: 767px) {
+    .frontend_contant_title {
+      text-align: center;
+    }
+  }
+.frontend_contant_text {
+    color: #727272;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: Roboto;
+    font-weight: 400px;
+    margin: 60px 0;
+}
+
+
+@media (max-width: 767px) {
+    .frontend_contant_text {
+        text-align: center;
+        margin: 20px 15px;
+    }
+  }
+
+.frontend_contant_button {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #34547A;
+    width:   calc(200px + 25 * ((100vw - 320px) / (1920 - 320)));
+    height: calc(40px + 25 * ((100vw - 320px) / (1920 - 320)));
+}
+.frontend_contant_button:hover {
+    transform: translateY(0.2em);
+    transition-property: all;
+    transition-duration: 200ms;
+}
+
+.frontend_contant_button a{
+    color: #FFFFFF;
+    font-size: calc(14px + 2 * ((100vw - 320px) / (1920 - 320)));
+    line-height: calc(24px + 2 * ((100vw - 320px) / (1920 - 320)));
+    font-family: Roboto;
+    font-weight: 400px;
+    padding: 10px 43px;
+}

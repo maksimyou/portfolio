@@ -1,0 +1,76 @@
+body{
+    margin: 0 auto;  
+    max-width: 100%; 
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1920px;
+    overflow: hidden;
+}
+
+.container_list_working_edit_add {
+    background: #EAEAEA;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title_list_working{
+    margin: 50px 0 0 80px;
+    font-family: Roboto;
+    font-size: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    width: 400px;
+    border-radius: 5px;
+}
+
+.title_list_working input{
+    width: 100%;
+    background: #E9E6E6;
+    padding: 5px 10px;
+}
+
+.title_list_working input::placeholder{
+    color: #7e7777;
+}
+.title_list_working input:focus{
+    border-radius: 5px;
+    border: 1px solid #555;
+    padding: 4px 10px;
+}
+.field_list_edit {
+    width: 727px;
+    margin: 42px 0 0 80px;
+    background: #E9E6E6;
+    height: 387px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.textarea-edit{
+    padding: 10px;
+    font-family: Roboto;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.textarea-edit:focus{
+    border: 1px solid #555;
+}
+.textarea-edit::placeholder{
+    color: #7e7777;
+}
+.actions_list_working {
+    display: flex;
+    height: 68%;
+    flex-direction: column;
+   justify-content: end;
+}
+.actions_list_working_edit_add {
+    display: flex;                     
+    height: 88%;
+    flex-direction: column;
+   justify-content: end;
+}

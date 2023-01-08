@@ -1,0 +1,53 @@
+
+.header_menu_constainer_to-do-list {
+    width: 168px; 
+   margin: 0 20px 0px;
+ }
+ .header_menu_list {
+    
+ }
+ @media (max-width: 670px) {
+     .header_menu_constainer {
+         display: none;
+      }
+  
+ }
+ .menu_list_content {
+     display: flex; 
+     justify-content: space-between;
+     font-family: Roboto;
+     color: #000000;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 26px;
+     letter-spacing: 10%;
+     margin-bottom: 7px;
+ 
+ }
+ 
+ .menu_list_content li{
+     position: relative;
+ }
+ 
+ @media (max-width: 670px) {
+    .menu_list_content li{
+        display: none;
+    }  
+}
+
+
+
+ .menu_list_content li::before {
+     position: absolute;
+     content: '';
+     bottom: 0;
+     border-bottom: 2px solid #34547A;
+     width: 0;
+ }
+ 
+ .menu_list_content li:hover:before {
+     width:100%;
+     transition-property: width;
+     transition-duration:  0.7s;
+ }
+ 

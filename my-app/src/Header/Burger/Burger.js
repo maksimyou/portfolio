@@ -8,6 +8,7 @@ function Burger({ moveBurger, setBurger }) {
                     <li><a href="#2">ОБ АВТОРЕ</a></li>
                     <li><a href="#3">РАБОТЫ</a></li>
                     <li><a href="#4">НАВЫКИ</a></li>
+                    <li><a href="#6">ПРОЕКТЫ</a></li>
                     <li><a href="#5">КОНТАКТЫ</a></li>
                 </ul>
             </nav >

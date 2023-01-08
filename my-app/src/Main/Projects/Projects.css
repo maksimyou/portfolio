@@ -14,12 +14,12 @@ justify-content: center;
 position: relative;
 width: calc(320px + 150 * ((100vw - 320px) / (1920 - 320)));
 height: calc(320px + 150 * ((100vw - 320px) / (1920 - 320)));
-
 }
 .projects_item a{
 display: block;
 
 }
+
 .projects_item a:hover:before{
     position: absolute;
     cursor: pointer;
