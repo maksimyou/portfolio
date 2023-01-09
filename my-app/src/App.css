@@ -96,4 +96,20 @@ body{
   max-width: 1920px;
   overflow: hidden;
 }
+.arrow{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  visibility: hidden;
+  transition: 0.7s;
+  opacity: 0;
 
+}
+.active-arrow{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  visibility: visible;
+  transition: 0.7s;
+  opacity: 1;
+}
