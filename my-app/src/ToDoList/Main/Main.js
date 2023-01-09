@@ -1,12 +1,13 @@
 import './Main.css'
 import ListMain from './ListMain/ListMain';
 
-function Main() {
+function Main(prop) {
+
 
     return (
 
         <div className="container_main_list">
-            <ListMain />
+            <ListMain isEditId={prop.isEditId} setidEditId={prop.setidEditId} toDoList={prop.toDoList} setToDoList={prop.setToDoList} />
         </div>
 
     );

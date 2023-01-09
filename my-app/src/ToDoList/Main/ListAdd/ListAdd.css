@@ -64,7 +64,17 @@ body{
 }
 .actions_list_working_edit_add {
     display: flex;                     
-    height: 88%;
+    height: 79%;
     flex-direction: column;
-   justify-content: end;
+   justify-content: space-between;
+}
+
+
+.back-list-todo{
+    font-family: Roboto;
+    color: #000000;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 10%;  
 }

@@ -14,11 +14,26 @@ function Header() {
             const blockID = anchor.getAttribute('href').substr(1);
             if (document.getElementById(blockID)) {
                 e.preventDefault();
+                //console.dir(document.getElementById(blockID));
+                //document.getElementById(blockID).scrollIntoView({
+                //    behavior: 'smooth',
+                //    block: 'center'
+                //});
+                if (document.getElementById(blockID).id == 'root') {
+                    document.getElementById(blockID).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
 
-                document.getElementById(blockID).scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+                } else {
+
+                    document.getElementById(blockID).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+
+                }
+
             }
         });
     });
