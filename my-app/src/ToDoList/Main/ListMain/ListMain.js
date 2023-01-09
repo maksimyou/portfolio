@@ -4,6 +4,18 @@ import { useState } from 'react';
 import { nanoid } from 'nanoid';
 function ListMain(prop) {
 
+    let [value, setValue] = useState('');
+
+
+    function filteredArray(value) {
+        let reg = new RegExp('(' + value + ')+');
+        return prop.toDoList.filter(elem => {
+            if (reg.test(elem.title)) { return elem; }
+        });
+    };
+
+    let filtList = filteredArray(value)
+
     function addClass(id) {
         if (prop.isEditId === id) { return ' highlight' } else { return '' };
     };
@@ -25,7 +37,6 @@ function ListMain(prop) {
     };
 
     function deleteCheckList() {
-
         prop.setToDoList(prop.toDoList.filter(todo => {
             if (prop.isEditId != todo.id) {
                 return todo;
@@ -35,7 +46,8 @@ function ListMain(prop) {
     };
 
 
-    let list = prop.toDoList.map((todo) => {
+
+    let list = filtList.map((todo) => {
         //addClass(todo.id);
         return <li className={todo.completed ? markerDelete(todo.completed, todo.id) : addClass(todo.id)} key={todo.id} onClick={() => { prop.setidEditId(todo.id) }
         }> {todo.title}</li >
@@ -46,6 +58,7 @@ function ListMain(prop) {
 
         <div className="container_list_working">
             <h1 className='project_check_list'>Проект - Чеклист в React</h1>
+            <input className='search' onChange={(e) => setValue(e.target.value)} placeholder='Поиск по названию' />
             <div className='container_list_active'>
                 <div className="content_list_working">
                     <ul className="list_working_lists">
