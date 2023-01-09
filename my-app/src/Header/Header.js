@@ -46,7 +46,7 @@ function Header() {
                         <div className="logo_content">AM</div>
                     </div>
                     <Menu />
-                    <span className='burger-btn' onClick={() => setBurger(!burger)}><span></span></span>
+                    <span className={burger ? 'burger-btn burger-active' : 'burger-btn'} onClick={() => setBurger(!burger)}><span></span></span>
                 </div>
                 <Burger moveBurger={burger} setBurger={setBurger} />
             </div>

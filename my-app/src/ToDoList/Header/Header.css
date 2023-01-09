@@ -97,19 +97,32 @@ margin-left: 20px;
     }
 }
 
-.burger-btn:active > span{
+.burger-active > span{
     transform: scale(0);
-   /*transition: all 0.3s;*/
+}
+
+.burger-active::before{
+    transform: translate(0,-11px) rotate(-0.12turn);
+}
+
+.burger-active::after{
+    transform: translate(0,10px) rotate(0.12turn);
+}
+
+
+/*.burger-btn:active > span{
+    transform: scale(0);
+   transition: all 0.3s;
 }
 
 .burger-btn:active::before{
     transform: translate(0,-11px) rotate(-0.12turn);
-    /*transition: all 0.3s;*/
+    transition: all 0.3s;
   
 }
 
 .burger-btn:active::after{
     transform: translate(0,10px) rotate(0.12turn);
-    /*transition:all 0.3s;*/
+    transition:all 0.3s;
 
-}
+}*/
