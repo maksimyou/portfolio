@@ -11,11 +11,9 @@ function Form() {
 
 
     let form = document.querySelector('.form_content_forms');
-    let formData = new FormData(form);
-
 
     function mailer() {
-
+        let formData = new FormData(form);
         fetch('/phpmailer/index.php', {
             method: 'POST',
             body: formData
