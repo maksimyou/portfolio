@@ -14,10 +14,11 @@ justify-content: center;
 position: relative;
 width: calc(320px + 150 * ((100vw - 320px) / (1920 - 320)));
 height: calc(320px + 150 * ((100vw - 320px) / (1920 - 320)));
+margin-right: 2px;
+margin-bottom: 2px;
 }
 .projects_item a{
 display: block;
-
 }
 
 .projects_item a:hover:before{

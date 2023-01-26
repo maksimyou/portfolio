@@ -154,3 +154,19 @@ width: 540px;
     padding: 10px 43px;
 
 }
+
+.error{
+    border:  2px solid red;
+}
+.auxiliary_form{
+    width:  calc(230px + 270 * ((100vw - 320px) / (1920 - 320)));
+    text-align: center;
+}
+.warning_message {
+    font-family: Roboto;
+    font-weight: 400px;
+    font-size: calc(14px + 5 * ((100vw - 320px) / (1920 - 320)));
+    color: rgb(194, 60, 60);
+    margin-top: 10px;
+    text-align: left;
+}
