@@ -12,7 +12,8 @@ function Form() {
 
     let form = document.querySelector('.form_content_forms');
 
-    function mailer() {
+    function mailer(e) {
+        e.preventDefault();
         let formData = new FormData(form);
         fetch('/phpmailer/index.php', {
             method: 'POST',
@@ -80,7 +81,7 @@ function Form() {
                     </div>
                     <div className='auxiliary_form'>
                         <div className='warning_message'>{warning}</div>
-                        <button onClick={(e) => { mailer(); warnMessage(); }} className='form_content_button'><span>Отправить</span></button>
+                        <button onClick={(e) => { mailer(e); warnMessage(); }} className='form_content_button'><span>Отправить</span></button>
                     </div>
 
                 </form>
