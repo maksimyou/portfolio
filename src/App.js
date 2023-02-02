@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { nanoid } from 'nanoid';
 import { Routes, Route, Link } from 'react-router-dom';
 import Header from './Header/Header';
@@ -21,8 +21,6 @@ function App() {
 
   let [isEditId, setidEditId] = useState(null);
   let [toDoList, setToDoList] = useState([{ id: id(), title: 'Пример заголовка 1', disc: 'Описание дела...великого и не раздельного', completed: false }, { id: id(), title: 'Пример заголовка 2', disc: 'Описание дела2...великого и не раздельного', completed: false }, { id: id(), title: 'Пример заголовка 3', disc: 'Описание дела3...великого и не раздельного', completed: false }]);
-
-
 
 
   return (

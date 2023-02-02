@@ -12,7 +12,7 @@ function Works() {
                     <div className="works_count_project"><span>Проект</span>№2</div>
                 </Link>
                 <a href="#" className="works_item"><img src={require("../Works/project.png")} alt="" />
-                    <div className="works_count_project"><span>5+</span> проектов</div>
+                    <div className="works_count_project"><span>Проект</span>№3</div>
                 </a>
                 <a href="#" className="works_item"><img src={require("../Works/project.png")} alt="" />
                     <div className="works_count_project"><span>5+</span> проектов</div>
