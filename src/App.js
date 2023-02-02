@@ -10,7 +10,9 @@ import ToDoList from './ToDoList/ToDoList';
 import Header2 from './ToDoList/Header/Header';
 import ListEdit from './ToDoList/Main/ListEdit/ListEdit';
 import ListAdd from './ToDoList/Main/ListAdd/ListAdd';
-import WrapperRoutes from './RoutesComponent/WrapperRoutes'
+import WrapperRoutes from './RoutesComponent/WrapperRoutes';
+import Calculator from './Calculator/Calculator'
+
 
 function App() {
   function id() {
@@ -35,6 +37,7 @@ function App() {
       <Routes>
         <Route path='/' element={<WrapperRoutes />}>
           <Route index element={<Main />} />
+          <Route path='Calculator' element={<><Header2 /><Calculator /></>} />
           <Route path='ToDoList' element={<><Header2 /><ToDoList isEditId={isEditId} setidEditId={setidEditId} toDoList={toDoList} setToDoList={setToDoList} /></>} />
           <Route path='ListAdd' element={<><Header2 /><ListAdd isEditId={isEditId} setidEditId={setidEditId} toDoList={toDoList} setToDoList={setToDoList} id={id} /></>} />
           <Route path='ListEdit' element={<><Header2 /><ListEdit isEditId={isEditId} setidEditId={setidEditId} toDoList={toDoList} setToDoList={setToDoList} /></>} />
